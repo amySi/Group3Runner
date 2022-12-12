@@ -7,8 +7,9 @@ on:
       - main
       - test
 jobs:
-  run-on: self-hosted
-  steps:
+  test-schedule:
+    run-on: [self-hosted]
+     steps:
     - name: checkout
       uses: actions/checkout@v2
 
